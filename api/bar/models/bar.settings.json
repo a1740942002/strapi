@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bars",
+  "info": {
+    "name": "Bar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
