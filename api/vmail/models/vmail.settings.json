@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "vmails",
   "info": {
-    "name": "Post",
+    "name": "Vmail",
     "description": ""
   },
   "options": {
@@ -15,20 +15,21 @@
     "title": {
       "type": "string"
     },
+    "isRead": {
+      "type": "boolean"
+    },
     "content": {
       "type": "richtext"
     },
-    "thumbnail": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "sender": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "vmails"
+    },
+    "receiver": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "vmails"
     }
   }
 }

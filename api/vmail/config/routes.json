@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/bars",
-      "handler": "bar.find",
+      "path": "/vmails",
+      "handler": "vmail.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/bars/count",
-      "handler": "bar.count",
+      "path": "/vmails/count",
+      "handler": "vmail.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/bars/:id",
-      "handler": "bar.findOne",
+      "path": "/vmails/:id",
+      "handler": "vmail.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/bars",
-      "handler": "bar.create",
+      "path": "/vmails",
+      "handler": "vmail.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/bars/:id",
-      "handler": "bar.update",
+      "path": "/vmails/:id",
+      "handler": "vmail.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/bars/:id",
-      "handler": "bar.delete",
+      "path": "/vmails/:id",
+      "handler": "vmail.delete",
       "config": {
         "policies": []
       }
